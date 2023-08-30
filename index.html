@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark fixed-top ">
+    <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark fixed-top"
+        style="background-color: rgb(205, 215, 195);">
         <div class="container-fluid ">
             <a class="navbar-brand ms-5" href="#">
-                <h2 class="text-dark fw-bold">E-Dine Exquistic</h2>
+                <img src="./images/Index Images/E-Dine_Exquistic.png" style="height: 60px;">
+                <!-- <h2 class="text-dark fw-bold">E-Dine Exquistic</h2> -->
                 <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
@@ -34,7 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="">Menus</a>
                     </li>
-                    
+
 
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="">Billing</a>
@@ -45,7 +50,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="">About Us</a>
                     </li>
-                  
+
 
 
                 </ul>
@@ -53,7 +58,7 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn text-dark me-3" type="submit"><i class="bi bi-search"></i></button>
                 </form>
-               
+
                 <button class="btn  me-3 desktop" type="submit" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <i class="bi bi-three-dots-vertical fs-2"></i></button>
@@ -94,6 +99,184 @@
     </div>
     <!-- Navbar End -->
 
+    <!-- Corousel -->
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/Index Images/corousel1.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Index Images/corousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Index Images/corousel3.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- corousel ends -->
+        <!-- Gallery -->
+        <div class="row">
+            <h1 class="text-center mb-md-5 mt-md-3"><u>Gallery</u></h1>
+            <div class="col-md-12 d-md-flex justify-content-around">
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery1.webp " style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery2.webp" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery3.jpg" style="height: 250px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-md-5">
+            <div class="col-md-12 d-md-flex justify-content-around">
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery4.jpg" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery5.webp" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery6.webp" style="height: 250px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-md-5">
+            <div class="col-md-12 d-md-flex justify-content-around">
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery7.png" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery8.webp" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery9.jpg" style="height: 250px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-md-5">
+            <div class="col-md-12 d-md-flex justify-content-around">
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery10.jpg" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery11.jpg" style="height: 250px;">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/Index Images/gallery12.webp" style="height: 250px;">
+                </div>
+            </div>
+        </div>
+        <!-- Gallery end -->
+        <!-- location  -->
+        <div class="row">
+            <h1 class="text-center mb-md-5 mt-md-5"><u>Our Location</u></h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7972414328956!2d72.87116519678956!3d19.0726503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c892b9cf57cd%3A0xf63e12173e299d2!2sDeluxe%20Restaurant!5e0!3m2!1sen!2sin!4v1693330126170!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-12 d-md-flex justify-content-around">
+                <div class="col-md-3 ">
+                    <h3 class="fw-bolder mt-3 mb-2">Book Table</h3>
+                   <button class="btn btn-primary mt-5 ms-md-4">Call Now</button>
+                    
+                </div>
+                <div class="col-md-3 ">
+                    <h3 class="fw-bolder mt-3 mb-2">Opening Hours</h3>
+                    Mon:	11:30 am-11:30 pm <Br>
+                    Tue:	11:30 am-11:30 pm<Br>
+                    Wed:	11:30 am-11:30 pm<Br>
+                    Thu:	11:30 am-11:30 pm<Br>
+                    Fri:	11:30 am-11:30 pm<Br>
+                    Sat:	11:30 am-11:30 pm<Br>
+                    Sun:	11:30 am-11:30 pm
+                    
+                </div>
+                <div class="col-md-3 ">
+                    <h3 class="fw-bolder mt-3 mb-2">Address</h3>
+                  <Address>Plot No 21/a
+                    Ring Road
+                    beside HP Petrol Pump
+                    Mhalgi Nagar
+                    Nagpur, Maharashtra 440034
+                    India</Address>
+                    <button class="btn btn-primary mt-5 ">Get Direction</button>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- reviews -->
+        <div class="row">
+            <h1 class="text-center mb-md-5 mt-md-3"><u>Reviews</u></h1>
+            <div class="col-md-12 d-md-flex justify-content-around">
+                <div class="col-md-3">
+                    <p class="text-warning"><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i> <span class="text-dark">4 days ago</span>
+                    </p> <span>If you are looking for a beautiful ambience ,
+                        good service
+                        and delicious food then you can stop your search and visit this restuarent cum lounge for sure.
+                        such place is much needed in East Nagpur as there were no such place uptill now nearby manewada
+                        , Mhalgi nagar , dighori, and Nandanvan. There is no need to go now outskirts of nagpur for good
+                        food and vibe.</span>
+                        <p class="fs-3 color">- Aditya P</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-warning"><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i> <span class="text-dark">1 week ago</span>
+                    </p>
+                    <span>It was a great experience. The ambience was wonderful, the food was superb and the service was
+                        good. Overall well recommended for your dine out with family or friends or any celebration as
+                        well.</span>
+                        <p class="fs-3 color">- Rohan B</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-warning"><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i> <span class="text-dark">2 weeks ago</span>
+                    </p>
+                    <span>Reasonable prices , good ambience and great food. Highly recommended if you are looking for
+                        quality food.</span>
+                        <p class="fs-3 color">- Kritika S</p>
+                </div>
+            </div>
+        </div>
+        <!-- reviews end -->
+    </div> <!--end div-->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
