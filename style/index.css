@@ -1,9 +1,31 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* background-color: rgb(206,222,189); */
-    background-color: linear-gradient(0deg, rgba(206,222,189,1) 0%, rgba(250,241,228,1) 60%);
+
+    /* background-color: rgb(206,222,189);
+    background-color: linear-gradient(0deg, rgba(206,222,189,1) 0%, rgba(250,241,228,1) 60%); */
 }
+.color{
+    color: blueviolet;
+    font-family: 'Caveat', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Ubuntu', sans-serif;
+}
+.img-height{
+    height: 280px;
+}
+@media(max-width:500px){
+    .img-height{
+        height: 200px;
+        margin-top: 30px;
+    }
+    .mobile-height{
+        margin-top: 80px;
+    }
+}
+
+ 
+
 
 footer{
     background-color: #333;
