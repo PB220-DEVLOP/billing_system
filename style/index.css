@@ -1,5 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(206,222,189);
+    background-color: linear-gradient(0deg, rgba(206,222,189,1) 0%, rgba(250,241,228,1) 60%);
 }
