@@ -1,0 +1,95 @@
+:root {
+  --menu-card-transition-settings: ease-in 0.1s;
+  --menu-sidebar-transition-settings: ease-in 0.2s;
+  --menu-card-btn-transition-settings: ease-in 0.1s;
+  /* menu section style var */
+  --menu-section-bg-color: #fff; /* menu title */
+  --menu-section-title-text-color: #000;
+  /*  
+ menu side bar style var 
+  --menu-side-bar-title-text-color: #000;  title 
+  --menu-side-bar-item-background-color: #fff;  background 
+  --menu-side-bar-item-hover-background-color: #ccc; hover background 
+  --menu-side-bar-item-text-color: #000;  text color 
+  --menu-side-bar-item-hover-text-color: #000; hover text color 
+ */
+  /* menu item card  */
+  --menu-item-card-width: 100%; /* card width */
+  --menu-item-card-height: 100%; /* card height */
+  --menu-item-background-color: #fff; /* background*/
+  --menu-item-card-shadow-size: 0 0 0.4rem; /* shadow size */
+  --menu-item-card-shadow-color: #ccc; /* shadow color */
+  --menu-item-card-hover-background-color: #fff; /* hover bg color */
+  --menu-item-card-hover-shadow-size: 0 0 01rem; /*hover  shadow size */
+  --menu-item-card-hover-shadow-color: #ccc; /* hover shadow color */
+  /* add btn  */
+  --menu-item-add-btn-background-color: #fff; /* add btn background*/
+  --menu-item-add-btn-text-color: #000; /* add btn text color */
+  --menu-item-card-add-btn-shadow-color: #ccc; /* add btn shadow color */
+  --menu-item-card-add-btn-shadow-size: 0 0 .2rem; /* add btn shadow size */
+  
+  --menu-item-add-btn-hover-text-color: #000; /* add btn hover text color */
+  --menu-item-add-btn-hover-background-color: #fff; /* add btn hover background */
+  --menu-item-add-btn-hover-shadow-size: 0 0 0.1rem; /* add btn shadow size */
+  --menu-item-add-btn-hover-shadow-color: #ccc; /* add btn shadow color */
+}
+/* default style removed */
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  color: black !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none;
+  background-color: transparent !important;
+}
+/* body and element style */
+html,
+*.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+/* menu section style */
+/* menu side bar */
+.menu_side_bar_holder {
+  height: 50vh;
+  width: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu_item_card{
+  width: var(--menu-item-card-width);
+  height: var(--menu-item-card-height);
+  box-shadow: var(--menu-item-card-shadow-color) var(--menu-item-card-shadow-size);
+  background-color: var(--menu-item-background-color);
+  transition: var(--menu-card-transition-settings);
+}
+.menu_item_card:hover{
+  background-color: var(--menu-item-card-hover-background-color);
+  box-shadow:var(--menu-item-card-hover-shadow-color) var(--menu-item-card-hover-shadow-size) ;
+}
+.menu_item_add_btn{
+  background-color: var(--menu-item-add-btn-background-color);
+  box-shadow: var(--menu-item-card-add-btn-shadow-color) var(--menu-item-card-add-btn-shadow-size);
+  transition: var(--menu-card-btn-transition-settings);
+}
+.menu_item_add_btn:hover{
+  background-color: var(--menu-item-add-btn-hover-background-color);
+  box-shadow: var(--menu-item-add-btn-hover-shadow-color) var(--menu-item-add-btn-hover-shadow-size);
+
+}
