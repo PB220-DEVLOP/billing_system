@@ -127,5 +127,5 @@ function addToCart(itemName, itemPrice, itemType, itemAmount) {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     cartItems.push({ name: itemName, amount: itemAmount, price: itemPrice, type: itemType });
     localStorage.setItem('cart', JSON.stringify(cartItems));
-    alert('Item added to cart!');
+    
 }

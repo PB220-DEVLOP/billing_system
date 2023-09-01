@@ -1,185 +1,97 @@
-<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="m-color modal-title" id="exampleModalLabel">Signin Page</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="card-l">
-                    <div class="card-header">
-                        <h4 class="text-center">E-Dine Exquistic- Login</h4>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control place" id="username"
-                                    placeholder="Enter your username">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label ">Password</label>
-                                <input type="password" class="form-control  place" id="password"
-                                    placeholder="Enter your password">
-                            </div>
-                            <button type="submit" class="btn btn-secondary btn-block"
-                                onclick="msg()">Login</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <span class="m-color ">Don't have an account? <button type="button" class="btn text-info"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                    Create Account
-                </button> </span>
-            <div class="modal-footer">
-
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="./../style/billing_section.css">
+<title>billing section</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Checkout</h2>
+    <div class="alert alert-info">
+      Your Total Bill Amount: <span id="total-amount">$0.00</span>
     </div>
-</div>
-<!-- modal end -->
 
-<!-- second modal -->
-
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content ">
-            <div class="modal-header">
-
-                <h5 class="modal-title m-color" id="exampleModalLabel">Create Account</h5>
-
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="card-l">
-                    <div class="card-header ">
-                        <h4 class="text-center">E-Dine Exquistic-SignUp</h4>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="username" class="form-label ">Username</label>
-                                <input type="text" class="form-control  place" id="username"
-                                    placeholder="Enter your username">
-                            </div>
-                            <div class="mb-3">
-
-                                <label for="email" type="email" class="form-label ">Email</label>
-                                <input type="text" class="form-control  place" id="username"
-                                    placeholder="Enter your Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control place" id="password"
-                                    placeholder="Enter your password">
-                            </div>
-
-                            <button type="submit" class="btn btn-secondary btn-block"
-                                onclick="create()">Create</button>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <span class="m-color">Already have an account? <button type="button" class="btn text-info"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Login
-                </button> </span>
-            <div class="modal-footer">
-
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Second modal end -->
-
-
-
-    <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark fixed-top"
-        style="background-color: rgb(205, 215, 195);">
-        <div class="container-fluid ">
-            <a class="navbar-brand ms-5" href="#">
-                <img src="./images/Index Images/E-Dine_Exquistic.png" style="height: 60px;">
-                <!-- <h2 class="text-dark fw-bold">E-Dine Exquistic</h2> -->
-                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </a>
-
-
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link ms-5 text-dark" aria-current="page" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./menu.html">Menus</a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="">Billing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./contactus.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./about.html">About Us</a>
-                    </li>
-
-
-
-                </ul>
-                <form class="d-flex me-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn text-dark me-3" type="submit"><i class="bi bi-search"></i></button>
-                </form>
-
-                <button class="btn  me-3 desktop" type="submit" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <i class="bi bi-three-dots-vertical fs-2"></i></button>
-
-
-            </div>
-        </div>
-    </nav>
-    <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i
-                    class="bi bi-person-square text-dark fs-3 me-2"></i></h5>
-            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <h6 class="text-dark">Sign Up</h6>
-                </button>
-            </div>
-            <hr class="text-dark">
-            <div>
-                <button class="btn">
-                    <h6 class="text-dark"><i class="bi bi-sign-merge-right fs-4"></i> Get Direction</h6>
-                </button>
-
-            </div>
-            <hr class="text-dark">
-            <div>
-                <button class="btn">
-                    <h6 class="text-dark">Help Center</h6>
-                </button>
-
-            </div>
-        </div>
-    </div>
+    <!-- Payment Options -->
+    <h4>Select Payment Method:</h4>
     
-    <!-- Navbar End -->
+    <!-- Online Banking -->
+    <div class="payment-option d-flex  justify-content-between ">
+      <label class="form-check-label" for="online-banking">
+        <i class="fas fa-university"></i> Online Banking
+      </label>
+      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#ONLINEBANKING" data-bs-whatever="@getbootstrap">PAY NOW</button>
+      <div class="modal fade" id="ONLINEBANKING" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-university"></i> Online Banking</h1>
+              <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPI -->
+    <div class="payment-option d-flex  justify-content-between ">
+      <label class="form-check-label" for="upi">
+        <i class="fas fa-mobile-alt"></i> UPI
+      </label>
+      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#upipaymemt" data-bs-whatever="@getbootstrap">PAY NOW</button>
+      <div class="modal fade" id="upipaymemt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-mobile-alt"></i> UPI PAYMENT</h1>
+              <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Payment -->
+    <div class="payment-option d-flex  justify-content-between ">
+      <label class="form-check-label" for="card-payment">
+        <i class="fas fa-credit-card"></i> Card Payment
+      </label>
+      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#CARDPAYMENT" data-bs-whatever="@getbootstrap">PAY NOW</button>
+      <div class="modal fade" id="CARDPAYMENT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"> <i class="fas fa-credit-card"></i> Card Payment</h1>
+              <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+  <script src="./../js/billing_section.js"></script>
+</body>
+</html>
