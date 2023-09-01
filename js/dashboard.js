@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display total bill using a toast
     const totalBillToast = new bootstrap.Toast(document.getElementById('totalBillToast'));
     const totalBillToastBody = document.getElementById('totalBillToastBody');
-    totalBillToastBody.textContent = `Total Bill: ${totalAmount} Rupees`;
+    totalBillToastBody.textContent = `${totalAmount} Rupees`;
     totalBillToast.show();
   }
   const clearCartBtn = document.getElementById('clear-cart-btn');
