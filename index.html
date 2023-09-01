@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>E-dine Exquistic</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,6 +18,109 @@
 </head>
 
 <body>
+ <!-- Modal -->
+ <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="m-color modal-title" id="exampleModalLabel">Signin Page</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-l">
+                    <div class="card-header">
+                        <h4 class="text-center">E-Dine Exquistic- Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control place" id="username"
+                                    placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label ">Password</label>
+                                <input type="password" class="form-control  place" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-block"
+                                onclick="msg()">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <span class="m-color ">Don't have an account? <button type="button" class="btn text-info"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Create Account
+                </button> </span>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal end -->
+
+<!-- second modal -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header">
+
+                <h5 class="modal-title m-color" id="exampleModalLabel">Create Account</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-l">
+                    <div class="card-header ">
+                        <h4 class="text-center">E-Dine Exquistic-SignUp</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label ">Username</label>
+                                <input type="text" class="form-control  place" id="username"
+                                    placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+
+                                <label for="email" type="email" class="form-label ">Email</label>
+                                <input type="text" class="form-control  place" id="username"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control place" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary btn-block"
+                                onclick="create()">Create</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <span class="m-color">Already have an account? <button type="button" class="btn text-info"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button> </span>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Second modal end -->
+
+
+
     <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark fixed-top"
         style="background-color: rgb(205, 215, 195);">
         <div class="container-fluid ">
@@ -27,7 +130,7 @@
                 <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
-                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </a>
 
@@ -39,7 +142,7 @@
                         <a class="nav-link ms-5 text-dark" aria-current="page" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="">Menus</a>
+                        <a class="nav-link text-dark" href="./menu.html">Menus</a>
                     </li>
 
 
@@ -47,10 +150,10 @@
                         <a class="nav-link text-dark" href="">Billing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="">Contact Us</a>
+                        <a class="nav-link text-dark" href="./contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="">About Us</a>
+                        <a class="nav-link text-dark" href="./about.html">About Us</a>
                     </li>
 
 
