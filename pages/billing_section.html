@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="./../style/billing_section.css">
-<title>billing section</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./../style/billing_section.css">
+  <title>billing section</title>
 </head>
+
 <body>
   <div class="container">
     <h2>Checkout</h2>
@@ -16,13 +18,14 @@
 
     <!-- Payment Options -->
     <h4>Select Payment Method:</h4>
-    
+
     <!-- Online Banking -->
     <div class="payment-option d-flex  justify-content-between ">
       <label class="form-check-label" for="online-banking">
         <i class="fas fa-university"></i> Online Banking
       </label>
-      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#ONLINEBANKING" data-bs-whatever="@getbootstrap">PAY NOW</button>
+      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#ONLINEBANKING"
+        data-bs-whatever="@getbootstrap">PAY NOW</button>
       <div class="modal fade" id="ONLINEBANKING" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -31,7 +34,7 @@
               <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
             </div>
             <div class="modal-body">
-             
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
@@ -46,7 +49,8 @@
       <label class="form-check-label" for="upi">
         <i class="fas fa-mobile-alt"></i> UPI
       </label>
-      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#upipaymemt" data-bs-whatever="@getbootstrap">PAY NOW</button>
+      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#upipaymemt"
+        data-bs-whatever="@getbootstrap">PAY NOW</button>
       <div class="modal fade" id="upipaymemt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -55,7 +59,7 @@
               <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
             </div>
             <div class="modal-body">
-             
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
@@ -70,7 +74,8 @@
       <label class="form-check-label" for="card-payment">
         <i class="fas fa-credit-card"></i> Card Payment
       </label>
-      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#CARDPAYMENT" data-bs-whatever="@getbootstrap">PAY NOW</button>
+      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#CARDPAYMENT"
+        data-bs-whatever="@getbootstrap">PAY NOW</button>
       <div class="modal fade" id="CARDPAYMENT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -79,19 +84,75 @@
               <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
             </div>
             <div class="modal-body">
-             
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
+              <div class="container">
+
+
+                <form action="">
+                  <div class="inputBox">
+                    <span><b>card number</b></span>
+                    <input type="text" maxlength="16" class="card-number-input">
+                  </div>
+                  <div class="inputBox">
+                    <span><b>card holder</b></span>
+                    <input type="text" class="card-holder-input">
+                  </div>
+                  <div class="flexbox">
+                    <div class="inputBox">
+                      <span>expiration mm</span>
+                      <select name="" id="" class="month-input">
+                        <option value="month" selected disabled>month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                    <div class="inputBox">
+                      <span>expiration yy</span>
+                      <select name="" id="" class="year-input">
+                        <option value="year" selected disabled>year</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                      </select>
+                    </div>
+                    <div class="inputBox">
+                      <span>cvv</span>
+                      <input type="text" maxlength="4" class="cvv-input">
+                    </div>
+                  </div>
+                  <input type="submit" value="submit" class="submit-btn">
+                 
+                </form>
+
+              </div>
             </div>
           </div>
+
         </div>
       </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="./../js/billing_section.js"></script>
 </body>
+
 </html>
