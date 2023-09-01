@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     listItem.classList.add('list-group-item');
 
     const itemText = document.createElement('span');
-    itemText.textContent = `${item.name} - $${item.price}`;
+    itemText.textContent = `${item.name} :- ${item.price} Rupees`;
     listItem.appendChild(itemText);
 
     const removeButton = document.createElement('button');
@@ -43,8 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display total bill using a toast
     const totalBillToast = new bootstrap.Toast(document.getElementById('totalBillToast'));
     const totalBillToastBody = document.getElementById('totalBillToastBody');
-    totalBillToastBody.textContent = `Total Bill: $${totalAmount}`;
+    totalBillToastBody.textContent = `Total Bill: ${totalAmount} Rupees`;
     totalBillToast.show();
+  }
+  const clearCartBtn = document.getElementById('clear-cart-btn');
+  clearCartBtn.addEventListener('click', clearCart);
+
+  function clearCart() {
+    // Clear the cart and update localStorage
+    localStorage.removeItem('cart');
+    // Reload the page to reflect the changes
+    location.reload();
   }
 });
 

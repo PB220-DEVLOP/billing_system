@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuItems_starter = [
-        {row:"row_1", title: "Nacho & Cheese ", amount: "20pic", price: 100, type: "Starter", imgUrl: "./images/menu-images/nacho-cheese-sauce.jpg" },
+        {row:"row_1", title: "Nacho & Cheese ", amount: "20pic", price: 100, type: "Starter", imgUrl:"./images/menu-images/nacho-cheese-sauce.jpg" },
         {row:"row_1", title: "Samosa ", amount: "2pic", price: 50, type: "Starter", imgUrl: "./images/menu-images/samosa.jpg" },
         {row:"row_1", title: "Samosa Chat", amount: "2pic", price: 90, type: "Starter", imgUrl: "./images/menu-images/samosa-chaat.jpg" },
         {row:"row_1", title: "Papdi Chat ", amount: "6pic", price: 90, type: "Starter", imgUrl: "./images/menu-images/papdi-chaat.jpg" },
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menu_side_bar_non_veg.appendChild(item);
     });
 
-    const menu_side_bar_dessert_beverages = document.getElementById("dessert-beverages");
+    const menu_side_bar_dessert_beverages = document.getElementById("menu_side_bar_dessert");
     menuItems_beverages.forEach(sideitem => {
         const item = createSidebarItem(sideitem);
         menu_side_bar_dessert_beverages.appendChild(item);
