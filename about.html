@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather:wght@300&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>AboutUS</title>
+    <style>
+        .text {
+            display: none;
+        }
+        
+        .card:hover .text {
+            display: block;
+        }
+        
+        .card:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- Modal -->
+ <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="m-color modal-title" id="exampleModalLabel">Signin Page</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-l">
+                    <div class="card-header">
+                        <h4 class="text-center">E-Dine Exquistic- Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control place" id="username"
+                                    placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label ">Password</label>
+                                <input type="password" class="form-control  place" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-block"
+                                onclick="msg()">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <span class="m-color ">Don't have an account? <button type="button" class="btn text-info"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Create Account
+                </button> </span>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal end -->
+
+<!-- second modal -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header">
+
+                <h5 class="modal-title m-color" id="exampleModalLabel">Create Account</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-l">
+                    <div class="card-header ">
+                        <h4 class="text-center">E-Dine Exquistic-SignUp</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label ">Username</label>
+                                <input type="text" class="form-control  place" id="username"
+                                    placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+
+                                <label for="email" type="email" class="form-label ">Email</label>
+                                <input type="text" class="form-control  place" id="username"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control place" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary btn-block"
+                                onclick="create()">Create</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <span class="m-color">Already have an account? <button type="button" class="btn text-info"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button> </span>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Second modal end -->
+
+
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark fixed-top"
+        style="background-color: rgb(205, 215, 195);">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-5" href="#">
+                <img src="./images/Index Images/E-Dine_Exquistic.png" style="height: 60px;">
+                <!-- <h2 class="text-dark fw-bold">E-Dine Exquistic</h2> -->
+                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </a>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-5 text-dark" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./menu.html">Menus</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="">Billing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./about.html">About Us</a>
+                    </li>
+
+
+
+                </ul>
+                <form class="d-flex me-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-dark me-3" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <button class="btn  me-3 desktop" type="submit" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="bi bi-three-dots-vertical fs-2"></i></button>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i
+                    class="bi bi-person-square text-dark fs-3 me-2"></i></h5>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <h6 class="text-dark">Sign Up</h6>
+                </button>
+            </div>
+            <hr class="text-dark">
+            <div>
+                <button class="btn">
+                    <h6 class="text-dark"><i class="bi bi-sign-merge-right fs-4"></i> Get Direction</h6>
+                </button>
+
+            </div>
+            <hr class="text-dark">
+            <div>
+                <button class="btn">
+                    <h6 class="text-dark">Help Center</h6>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navbar End -->
+
+
+   
+    <div class="container text-center ">
+        <p class="fs-1 mt-5 ms-5 pt-5 text-center font fw-bolder "> Wel-Come To The E-Dine Exquistic</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="./images/Index Images/E-Dine_Exquistic.png" class="img-fluid col-lg-11 col-sm-10 mt-5 rounded-1 img">
+            </div>
+            <div class="col-lg-6">
+                <p class="mt-4 ms-2 just "> Welcome to E-dine Exquisite, where culinary artistry meets a
+                    symphony of flavors. Our restaurant is a digital haven for food enthusiasts seeking a diverse and
+                    exquisite dining experience. Nestled within the virtual realm, E-dine Exquisite is a testament to
+                    our passion for crafting unforgettable meals that cater to every palate.
+
+                    At E-dine Exquisite, we pride ourselves on offering a plethora of culinary delights that span
+                    continents and cultures. Our menu is a carefully curated masterpiece, featuring an array of cuisines
+                    that celebrate the essence of global gastronomy. From the rich and aromatic spices of Indian curries
+                    to the delicate refinement of Japanese sushi, our chefs have mastered the art of bringing
+                    authenticity to every dish.
+
+                    Upon visiting our restaurant website, you'll be greeted by a captivating visual journey through our
+                    menu. Each section unveils a tapestry of flavors, meticulously prepared to tantalize your taste buds
+                    and transport you to distant lands. Whether you're in the mood for the robust flavors of a perfectly
+                    grilled steak, the comforting embrace of a creamy Italian pasta, or the zesty tang of a Mexican
+                    street taco, E-dine Exquisite has a culinary story waiting for you.
+
+                    Our commitment to quality and innovation shines through not only in our diverse menu but also in the
+                    way we present our offerings. Through vivid imagery and detailed descriptions, we provide a virtual
+                    dining experience that engages all your senses. You'll discover the stories behind each dish – the
+                    inspirations that led to its creation and the careful selection of ingredients that make it truly
+                    exceptional.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row ">
+        <p class="fs-2  pt-5 text-center fw-bolder "> Our Team</p>
+        <div class="col-md-12 d-md-flex justify-content-center">
+            <div class="col-md-3 col-12  mt-md-5 m-md-3 ">
+                <div class="card bg-dark mt-4">
+                    <div class="card-body">
+                        <img src="./images/About img/img3.png.jpg" class="d-flex justify-content-center w-100">
+
+                        <span class="fw-bolder text-light fs-3">Harshada Hedau</span><br>
+
+                        <p class="text text-light  p-1">
+
+                            An ex-convict must undertake a perilous, violent journey in order to meet his daughter
+                            after ten years of imprisonment.
+                            Currently you are able to watch "Bholaa" on Watchwave. </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12  mt-md-5 m-md-3 ">
+                <div class="card bg-dark mt-4">
+                    <div class="card-body">
+                        <img src="./images/About img/img2.png.jpg" class="d-flex justify-content-center w-100">
+
+                        <span class="fw-bolder text-light fs-3">Pratik Bhoyar </span><br>
+
+                        <p class="text text-light  p-1">
+
+                            An ex-convict must undertake a perilous, violent journey in order to meet his daughter
+                            after ten years of imprisonment.
+                            Currently you are able to watch "Bholaa" on Watchwave. </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12  mt-md-5 m-md-3 ">
+                <div class="card bg-dark mt-4">
+                    <div class="card-body">
+                        <img src="./images/About img/img1.png.jpg" class="d-flex justify-content-center w-100">
+
+                        <span class="fw-bolder text-light fs-3">Dhanashree Mahatme</span><br>
+
+                        <p class="text text-light  p-1">
+
+                            An ex-convict must undertake a perilous, violent journey in order to meet his daughter
+                            after ten years of imprisonment.
+                            Currently you are able to watch "Bholaa" on Watchwave. </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="col-md-12 d-md-flex justify-content-center">
+    <div class="col-md-3 col-12  mt-md-5 m-md-3 ">
+        <div class="card bg-dark mt-4">
+            <div class="card-body">
+                <img src="./img2.png.jpg" class="d-flex justify-content-center w-100">
+
+                <span class="fw-bolder text-light fs-3">Pratik Bhoyar </span><br>
+
+                <p class="text text-light  p-1">
+
+                    An ex-convict must undertake a perilous, violent journey in order to meet his daughter
+                    after ten years of imprisonment.
+                    Currently you are able to watch "Bholaa" on Watchwave. </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-12  mt-md-5 m-md-3 ">
+        <div class="card bg-dark mt-4">
+            <div class="card-body">
+                <img src="./img2.png.jpg" class="d-flex justify-content-center w-100">
+
+                <span class="fw-bolder text-light fs-3">Pratik Bhoyar </span><br>
+
+                <p class="text text-light  p-1">
+
+                    An ex-convict must undertake a perilous, violent journey in order to meet his daughter
+                    after ten years of imprisonment.
+                    Currently you are able to watch "Bholaa" on Watchwave. </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-12  mt-md-5 m-md-3 ">
+        <div class="card bg-dark mt-4">
+            <div class="card-body">
+                <img src="./img2.png.jpg" class="d-flex justify-content-center w-100">
+
+                <span class="fw-bolder text-light fs-3">Pratik Bhoyar </span><br>
+
+                <p class="text text-light  p-1">
+
+                    An ex-convict must undertake a perilous, violent journey in order to meet his daughter
+                    after ten years of imprisonment.
+                    Currently you are able to watch "Bholaa" on Watchwave. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="restaurant-footer">
+    <div class="restaurant-name">
+        <h1>E-Dine Exquisite</h1>
+      </div>
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h2>Contact Us</h2>
+        <ul class="contact-info">
+          <li><i class="bi bi-telephone-fill fs-2"></i> 123-456-7890</li>
+          <li><i class="bi bi-envelope-fill fs-2 me-2"></i> <a href="mailto:info@restaurant.com" class="text-decoration-none text-light">edine@xquisite.com</a></li>
+          <li><i class="bi bi-geo-alt-fill fs-2"></i>Nagpur,Maharastra</li>
+          <li><i class="bi bi-whatsapp fs-2"></i> 123-456-7890</l>
+          
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Follow Us</h2>
+        <ul class="social-icons">
+          <li><i class="bi bi-facebook fs-1"></i></li>
+          <li><i class="bi bi-twitter"></i></li>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-youtube"></i></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>About Us</h2>
+        <p>Our Restaurant offers a delightful dining experience, with a diverse menu crafted from fresh and locally sourced ingredients. Our commitment to quality and taste is what sets us apart.</p>
+      </div>
+     
+      <div class="footer-section">
+        <h2>Help</h2>
+        <ul class="help-info ">
+          <li><a href="#" class="text-decoration-none text-light">Payments</a></li>
+          <li><a href="#" class="text-decoration-none text-light">F&Qs</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Customer Support</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Contact us</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
