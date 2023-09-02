@@ -5,23 +5,52 @@
     /* background-color: rgb(206,222,189);
     background-color: linear-gradient(0deg, rgba(206,222,189,1) 0%, rgba(250,241,228,1) 60%); */
 }
-.color{
-    color: blueviolet;
-    font-family: 'Caveat', cursive;
-font-family: 'Merriweather', serif;
-font-family: 'Ubuntu', sans-serif;
-}
+
 .img-height{
     height: 280px;
 }
+.img{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.img1:hover{
+  transform: scale(1.1);
+  transition-duration: 2s;
+  opacity: 0.7;
+}
+.catering-head{
+  font-family: 'Merriweather', serif;
+  padding-top: 140px;
+}
+.head{
+  font-family: 'Merriweather', serif;
+ 
+}
+.secondhead{
+  color: rgb(138, 138, 206);
+  font-family: 'Dancing Script', cursive;
+}
 @media(max-width:500px){
-    .img-height{
-        height: 200px;
-        margin-top: 30px;
-    }
+  
     .mobile-height{
         margin-top: 80px;
     }
+    .lst1-img{
+      width: 30px;
+      }
+      .first-img
+      {
+       width: 200px;
+      }
+      .img{
+        margin-top: 30px;
+      }
+      .img1{
+        width: 330px;
+      }
+      .map{
+        width: 350px;
+      }
 }
 
  
