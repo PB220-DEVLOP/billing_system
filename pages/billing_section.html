@@ -227,117 +227,202 @@
               <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
             </div>
             <div class="modal-body">
+              <form action="">
+
+                <div class="row">
+
+                  <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                      <span>Full name :</span>
+                      <input type="text" placeholder="Enter your full name">
+                    </div>
+                    <div class="inputBox">
+                      <span>Email :</span>
+                      <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="inputBox">
+                      <span>Address :</span>
+                      <input type="text" placeholder="Enter your address">
+                    </div>
+
+
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>State :</span>
+                        <input type="text" placeholder="india">
+                      </div>
+                      <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                      <span>Cards accepted :</span>
+                      <img src="../images/billing-section/card.png" alt="">
+                    </div>
+
+                    <div class="inputBox">
+                      <span>Credit card number :</span>
+                      <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                      <span>Exp month :</span>
+                      <input type="text" placeholder="january">
+                    </div>
+
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>Exp year :</span>
+                        <input type="number" placeholder="2022">
+                      </div>
+                      <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <input type="submit" value="proceed to checkout" class="submit-btn">
+
+              </form>
 
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
-            </div>
+
           </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- UPI -->
-    <div class="payment-option d-flex  justify-content-between ">
-      <label class="form-check-label" for="upi">
-        <i class="fas fa-mobile-alt"></i> UPI
-      </label>
-      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#upipaymemt"
-        data-bs-whatever="@getbootstrap">PAY NOW</button>
-      <div class="modal fade" id="upipaymemt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-mobile-alt"></i> UPI PAYMENT</h1>
-              <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
-            </div>
-            <div class="modal-body">
+  <!-- UPI -->
+  <div class="payment-option d-flex  justify-content-between ">
+    <label class="form-check-label" for="upi">
+      <i class="fas fa-mobile-alt"></i> UPI
+    </label>
+    <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#upipaymemt"
+      data-bs-whatever="@getbootstrap">PAY NOW</button>
+    <div class="modal fade" id="upipaymemt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-mobile-alt"></i> UPI PAYMENT</h1>
+            <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="">
+                <div class="inputBox">
+                  <span><b> Your UPI ID</b></span>
+                  <input type="text" placeholder="Enter your UPI id" maxlength="16" class="card-number-input">
+                </div>
+                <div class="online-payment">
+                  <img src="../images/billing-section/card.png">
+                  <img src="../images/billing-section/SBI.png">
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-success " data-bs-dismiss="modal">DONE</button>
+                </div>
+                <div>
+                  <img src="../images/billing-section/QR-code.png.jpg" height=100px><br>
+                  Scan to pay with any UPI app
+                </div>
+                <input type="submit" value="Verify" class="submit-btn">
+
+              </form>
             </div>
           </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Card Payment -->
-    <div class="payment-option d-flex  justify-content-between ">
-      <label class="form-check-label" for="card-payment">
-        <i class="fas fa-credit-card"></i> Card Payment
-      </label>
-      <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#CARDPAYMENT"
-        data-bs-whatever="@getbootstrap">PAY NOW</button>
-      <div class="modal fade" id="CARDPAYMENT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"> <i class="fas fa-credit-card"></i> Card Payment</h1>
-              <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
+  <!-- Card Payment -->
+  <div class="payment-option d-flex  justify-content-between ">
+    <label class="form-check-label" for="card-payment">
+      <i class="fas fa-credit-card"></i> Card Payment
+    </label>
+    <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#CARDPAYMENT"
+      data-bs-whatever="@getbootstrap">PAY NOW</button>
+    <div class="modal fade" id="CARDPAYMENT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"> <i class="fas fa-credit-card"></i> Card Payment
+            </h1>
+            <button type="button" class="btn-danger " data-bs-dismiss="modal" aria-label="Close">close</button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
 
 
-                <form action="">
+              <form action="">
+                <div class="inputBox">
+                  <span><b>card number</b></span>
+                  <input type="text" maxlength="16" class="card-number-input">
+                </div>
+                <div class="inputBox">
+                  <span><b>card holder</b></span>
+                  <input type="text" class="card-holder-input">
+                </div>
+                <div class="flexbox">
                   <div class="inputBox">
-                    <span><b>card number</b></span>
-                    <input type="text" maxlength="16" class="card-number-input">
+                    <span>expiration mm</span>
+                    <select name="" id="" class="month-input">
+                      <option value="month" selected disabled>month</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
                   </div>
                   <div class="inputBox">
-                    <span><b>card holder</b></span>
-                    <input type="text" class="card-holder-input">
+                    <span>expiration yy</span>
+                    <select name="" id="" class="year-input">
+                      <option value="year" selected disabled>year</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                    </select>
                   </div>
-                  <div class="flexbox">
-                    <div class="inputBox">
-                      <span>expiration mm</span>
-                      <select name="" id="" class="month-input">
-                        <option value="month" selected disabled>month</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                    </div>
-                    <div class="inputBox">
-                      <span>expiration yy</span>
-                      <select name="" id="" class="year-input">
-                        <option value="year" selected disabled>year</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                      </select>
-                    </div>
-                    <div class="inputBox">
-                      <span>cvv</span>
-                      <input type="text" maxlength="4" class="cvv-input">
-                    </div>
+                  <div class="inputBox">
+                    <span>cvv</span>
+                    <input type="text" maxlength="4" class="cvv-input">
                   </div>
-                  <input type="submit" value="submit" class="submit-btn">
-                 
-                </form>
+                </div>
+                <input type="submit" value="submit" class="submit-btn">
 
-              </div>
+              </form>
+
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
   </div>

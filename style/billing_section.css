@@ -55,13 +55,13 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: .2s linear;
+    
 }
 
 .container form .submit-btn:hover{
     letter-spacing: 2px;
     opacity: .8;
 }
-
 
 
 
