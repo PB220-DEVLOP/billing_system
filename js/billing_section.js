@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Display the total bill amount on the billing page
   const totalAmountElement = document.getElementById('total-amount');
-  totalAmountElement.textContent = `$${totalAmount.toFixed(2)}`;
+  totalAmountElement.textContent = `${totalAmount.toFixed(2)} Rupess`;
   
 });
