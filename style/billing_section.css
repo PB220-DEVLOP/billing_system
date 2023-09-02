@@ -55,6 +55,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: .2s linear;
+    
 }
 
 .container form .submit-btn:hover{
@@ -62,7 +63,9 @@ body {
     opacity: .8;
 }
 
-
+.online-payment{
+    justify-content: space-between;
+}
 
 
 
